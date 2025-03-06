@@ -20,7 +20,6 @@ int main(int argc, char const *argv[]) {
     while(cin >> i >> j){
         for(int a=i,now;a<=j;a++){
             now=check(a);
-            printf("%d\n",now);
             if(now>Highlen){
                 Highlen=now;
             }
