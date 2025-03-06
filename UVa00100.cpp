@@ -16,8 +16,10 @@ int check(int n){
 }
 
 int main(int argc, char const *argv[]) {
-    int i,j,Highlen=0;
-    while(cin >> i >> j){
+    int i,j,Highlen;
+    while(cin>>i>>j){
+        Highlen=0;
+        int m=i,k=j;
         if(j<i){
             swap(i,j);
         }
@@ -27,7 +29,7 @@ int main(int argc, char const *argv[]) {
                 Highlen=now;
             }
         }
-        printf("%d %d %d\n",i,j,Highlen);
+        cout<<m<<" "<<k<<" "<<Highlen<<endl;
     }
 
     return 0;
