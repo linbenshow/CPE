@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int check(int n){
+    int len=1;
+    printf("check:\n");
+    while (n!=1){
+        if(n%2==1){
+            n=3*n+1;
+        }else {
+            n/=2;
+        }
+        len++;
+    }
+
+    return len;
+}
+
+int main(int argc, char const *argv[]) {
+    int i,j,Highlen=0;
+    cin >> i >> j;
+    for(int a=i,now;a<=j;a++){
+            now=check(a);
+            printf("%d\n",now);
+        if(now>Highlen){
+            Highlen=now;
+        }
+    }
+    printf("%d %d %d",i,j,Highlen);
+    return 0;
+}
