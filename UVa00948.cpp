@@ -2,9 +2,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    long long int fib[10000],N,ls[501],count;
-    fib[0]=1;
-    fib[1]=2;
+    long long int fib[10000]={1,2},N,ls[501],count;
     for(int i=2;i<10000;i++)
     {
         fib[i]=fib[i-1]+fib[i-2];
